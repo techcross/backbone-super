@@ -60,8 +60,9 @@
     return wrapper;
   };
 
-	var ctor = function(){}, inherits = function(parent, protoProps, staticProps) {
-        var child, parentProto = parent.prototype;
+	inherits = function(parent, protoProps, staticProps) {
+		var ctor = function(){}, 
+        	var child, parentProto = parent.prototype;
 
 		// The constructor function for the new subclass is either defined by you
 		// (the "constructor" property in your `extend` definition), or defaulted
