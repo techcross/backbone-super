@@ -60,8 +60,8 @@
     return wrapper;
   };
 
-	inherits = function(parent, protoProps, staticProps) {
-		var ctor = function(){}, 
+	var inherits = function(parent, protoProps, staticProps) {
+		var ctor = function(){};
         	var child, parentProto = parent.prototype;
 
 		// The constructor function for the new subclass is either defined by you
